@@ -15,9 +15,7 @@ Depois que o autômato é definido, o programa entra em um loop onde o usuário 
 
 3. Abra um terminal ou prompt de comando e navegue até o diretório onde o arquivo `main.py` está localizado.
 
-4. Execute o seguinte comando para iniciar o programa:
-   
-```python main.py``` 
+4. Execute o seguinte comando para iniciar o programa: ```python main.py``` 
 
 5. Siga as instruções na saída do programa para definir o autômato e testar palavras.
 

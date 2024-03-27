@@ -1,0 +1,48 @@
+# Exemplo de Uso 
+Considere o seguinte autômato finito determinístico que aceita números binários multiplos de 3
+###add img 
+
+Seguindo a ordem de execução do código: 
+
+Estruturas: 
+estados = [q0, q1, q2] 
+alfabeto = [0,1] 
+estado_inicial = "q0" 
+estados_finais = [q0]
+
+Funções de Transição - 
+  - δ(q0, 0) = q0
+  - δ(q0, 1) = q1
+  - δ(q1, 0) = q2
+  - δ(q1, 1) = q0
+  - δ(q2, 0) = q1
+  - δ(q2, 1) = q2
+
+Explicando o processamento passo a passo:
+
+- Solicitamos a entrada da palavra ao usuário.
+- Verificamos se todos os caracteres da entrada pertencem ao alfabeto definido. Se houver caracteres inválidos, solicitamos uma nova entrada. 
+- Inicializamos o estado atual com o estado inicial do autômato.
+- Inicializamos a variável rejeitou como False para fazer o controle de quando a palavra é rejeitada, dispensando a necessidade de continuar processando a palavra.
+- Iteramos sobre cada caractere da palavra de entrada. Neste momento imprimimos a função de transição para o par (estado_atual, caractere). Se não houver uma entrada correspondente na função de transição, isso significa que o autômato não tem uma transição para esse par de estado e caractere, o que leva à rejeição da palavra.
+O método get() é usado para acessar o valor correspondente no dicionário funcao_transicao, e se não houver valor correspondente, ele retornará None.
+estado_atual = funcao_transicao.get((estado_atual, caractere), None): Atualiza o estado atual para o próximo estado de acordo com a função de transição. Se não houver uma transição definida para o par (estado_atual, caractere), estado_atual será definido como None.
+- Verifica se o estado atual é None, o que indica que não há transição definida para o par (estado_atual, caractere).
+Se estado_atual for None, a palavra é rejeitada. Portanto, definimos rejeitou como True e saímos do loop usando break.
+Verificação do estado final:
+
+if not rejeitou:: Verifica se a palavra ainda não foi rejeitada (ou seja, rejeitou é False).
+Se a palavra não foi rejeitada, verificamos se o estado_atual está entre os estados finais do autômato.
+Se sim, a palavra é aceita e exibimos "Aceita".
+else:: Se a palavra foi rejeitada, exibimos "Rejeita".
+- Para cada caractere, consultamos a função de transição para determinar o próximo estado, 
+- Se não houver uma transição definida para o par de estado atual e caractere, definimos rejeitou como True e saímos do loop.-- 
+- Verificamos se a palavra foi rejeitada ou não.
+- Se a palavra não foi rejeitada, verificamos se o estado atual é um estado final.
+- Imprimimos "Aceita" se a palavra foi aceita ou "Rejeita" se a palavra foi rejeitada.
+- Perguntamos se o usuário deseja testar outra palavra. Se não, saímos do loop.
+
+
+
+
+

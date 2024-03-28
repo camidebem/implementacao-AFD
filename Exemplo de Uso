@@ -1,6 +1,7 @@
 # Exemplo de Uso 
 Considere o seguinte autômato finito determinístico que aceita números binários multiplos de 3
-###add img 
+
+./AFD.img
 
 Seguindo a ordem de execução do código: 
 

@@ -19,6 +19,5 @@ Depois que o autômato é definido, o programa entra em um loop onde o usuário 
 
 5. Siga as instruções na saída do programa para definir o autômato e testar palavras.
 
-Esse é um exemplo básico de como executar o programa. Certifique-se de ter todas as dependências necessárias instaladas e de estar no diretório correto ao executar o código.
+Em exemplo de uso temos a descrição do funcionamento do autômato nomeado "AFD.png".
 
-Esse é um código simples para entender os conceitos básicos de um AFD genérico em Python. Você pode adaptá-lo conforme necessário para atender às suas necessidades específicas.

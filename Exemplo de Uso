@@ -1,8 +1,6 @@
 # Exemplo de Uso 
 Considere o seguinte autômato finito determinístico que aceita números binários multiplos de 3
 
-[AFD](https://github.com/camidebem/implementacao-AFD/raw/main/AFD.png)
-
 Seguindo a ordem de execução do código: 
 
 Estruturas: 

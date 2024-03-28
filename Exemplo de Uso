@@ -1,7 +1,7 @@
 # Exemplo de Uso 
 Considere o seguinte autômato finito determinístico que aceita números binários multiplos de 3
 
-./AFD.img
+![AFD](https://github.com/camidebem/implementacao-AFD/raw/main/AFD.png)
 
 Seguindo a ordem de execução do código: 
 
@@ -31,17 +31,10 @@ estado_atual = funcao_transicao.get((estado_atual, caractere), None): Atualiza o
 - Verifica se o estado atual é None, o que indica que não há transição definida para o par (estado_atual, caractere).
 Se estado_atual for None, a palavra é rejeitada. Portanto, definimos rejeitou como True e saímos do loop usando break.
 Verificação do estado final:
-
 if not rejeitou:: Verifica se a palavra ainda não foi rejeitada (ou seja, rejeitou é False).
 Se a palavra não foi rejeitada, verificamos se o estado_atual está entre os estados finais do autômato.
 Se sim, a palavra é aceita e exibimos "Aceita".
 else:: Se a palavra foi rejeitada, exibimos "Rejeita".
-- Para cada caractere, consultamos a função de transição para determinar o próximo estado, 
-- Se não houver uma transição definida para o par de estado atual e caractere, definimos rejeitou como True e saímos do loop.-- 
-- Verificamos se a palavra foi rejeitada ou não.
-- Se a palavra não foi rejeitada, verificamos se o estado atual é um estado final.
-- Imprimimos "Aceita" se a palavra foi aceita ou "Rejeita" se a palavra foi rejeitada.
-- Perguntamos se o usuário deseja testar outra palavra. Se não, saímos do loop.
 
 
 
